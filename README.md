@@ -2,6 +2,9 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/a1fred/git-barry/badge.svg?branch=master)](https://coveralls.io/github/a1fred/git-barry?branch=master)
 
+[![PyPI version](https://badge.fury.io/py/gitbarry.svg)](https://badge.fury.io/py/gitbarry)
+
+
 # Installation
 ## From source
 ```shell
