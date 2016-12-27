@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/a1fred/git-barry.svg?branch=master)](https://travis-ci.org/a1fred/git-barry)
+
+
 # Installation
 ## From source
 ```shell
