@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/a1fred/git-barry.svg?branch=master)](https://travis-ci.org/a1fred/git-barry)
 
+[![Coverage Status](https://coveralls.io/repos/github/a1fred/git-barry/badge.svg?branch=master)](https://coveralls.io/github/a1fred/git-barry?branch=master)
 
 # Installation
 ## From source

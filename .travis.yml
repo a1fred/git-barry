@@ -4,5 +4,12 @@ python:
   - "3.4"
   - "3.5"
   - "3.6"
-install: pip install tox-travis
+cache:
+  directories:
+    - $HOME/.cache/pip
+install: pip install tox-travis coveralls coverage flake8
 script: tox
+
+after_success:
+  - coverage report
+  - coveralls
