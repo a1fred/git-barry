@@ -19,9 +19,9 @@ $ python install gitbarry
 ```shell
 git barry <reason> <type> [name]
 ```
-reason - start or finish
-type - one types from ini
-name - name of task when start
+* reason - start or finish
+* type - one types from ini
+* name - name of task when start
 
 
 ## Start new feature
