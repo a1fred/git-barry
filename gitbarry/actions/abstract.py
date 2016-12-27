@@ -8,4 +8,3 @@ class AbstractAction(object):
 
     def run(self):
         raise NotImplementedError("You must implement this method")
-

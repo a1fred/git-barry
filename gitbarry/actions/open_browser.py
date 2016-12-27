@@ -9,6 +9,5 @@ class Action(AbstractAction):
         print("Opening broser at %s" % self.current_branch)
 
     def run(self):
-        url = self.params['finish-open-browser-url'].format(branch = self.current_branch)
+        url = self.params['finish-open-browser-url'].format(branch=self.current_branch)
         webbrowser.open_new_tab(url)
-

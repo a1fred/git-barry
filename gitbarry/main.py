@@ -34,6 +34,7 @@ def run():
 
     main(*sys.argv[1:])
 
+
 if __name__ == "__main__":
     assert_is_git_repo()
     run()

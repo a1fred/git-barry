@@ -1,4 +1,4 @@
-from gitbarry.reasons import start, finish, switch, publish
+from gitbarry.reasons import start, finish  # , switch, publish
 
 REASONS = {
     'start': start,

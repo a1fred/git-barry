@@ -40,4 +40,3 @@ class UtilsGitTests(TestCase):
 
         git.delete_branch(new_branch_name)
         self.assertNotIn(new_branch_name, git.get_local_branches())
-

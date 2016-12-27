@@ -4,6 +4,7 @@ from gitbarry.config import exceptions
 from gitbarry.config.validator import validate_task
 from gitbarry.constants import FINISH_ACTIONS
 
+
 def config2settings(config) -> dict:
     settings = {
         'TASKS': {},
@@ -33,4 +34,3 @@ def config2settings(config) -> dict:
             sys.exit(3)
         settings['FINISH_ACTIONS'][action] = module
     return settings
-

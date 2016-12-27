@@ -1,7 +1,9 @@
 from gitbarry.constants import FINISH_ACTIONS
 
+
 def validate_settings(settings: dict):
     pass
+
 
 def validate_task(task_params: dict):
     errors = []
@@ -13,4 +15,3 @@ def validate_task(task_params: dict):
         errors.append("Unknown finish-action value - '%s'. %s is valid" % (finish_action, "|".join(list(FINISH_ACTIONS.keys()))))
 
     return errors
-
