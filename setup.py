@@ -11,7 +11,7 @@ setup(
     name='gitbarry',
     version='0.3',
     packages=find_packages(),
-    url='http://gitlab.dev.tivak.ru/a1fred/gitbarry',
+    url='https://github.com/a1fred/git-barry',
     license='MIT',
     author='a1fred',
     author_email='demalf@gmail.com',
