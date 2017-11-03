@@ -71,5 +71,5 @@ def delete_branch(branch_name):
 
 
 def tag(tagname):
-    output = sh.git("tag", tagname)
+    output = sh.git("tag", "-f", tagname)
     print(output)
