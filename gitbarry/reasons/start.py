@@ -11,7 +11,7 @@ class Reason(AbstractReason):
 
     def validate(self):
         if len(self.args) != 2:
-            return ['use git barry start help to see options.']
+            return ['use "git barry start help" to see options.']
         task, name = self.args
         errors = []
         if task not in tasks:

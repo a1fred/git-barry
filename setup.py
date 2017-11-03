@@ -9,7 +9,7 @@ test_requires = requires
 
 setup(
     name='gitbarry',
-    version='0.3',
+    version='0.3.1',
     packages=find_packages(),
     url='https://github.com/a1fred/git-barry',
     license='MIT',
@@ -31,7 +31,6 @@ setup(
         'Operating System :: Unix',
         'Operating System :: POSIX',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Topic :: Software Development',

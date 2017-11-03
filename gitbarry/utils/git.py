@@ -14,7 +14,6 @@ def assert_is_git_repo():
 
 def get_current_branch() -> str:
     current_branch = sh.git('rev-parse', '--abbrev-ref', 'HEAD')
-    print(current_branch)
     return current_branch.strip()
 
 

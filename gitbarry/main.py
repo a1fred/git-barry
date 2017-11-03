@@ -6,10 +6,10 @@ from gitbarry.utils.git import assert_is_git_repo
 from gitbarry.reasons import REASONS
 
 
-def usage(exit=True):
+def usage(need_exit=True):
     print("\nUsage:")
     print("git barry %s" % '|'.join(REASONS.keys()))
-    if exit:
+    if need_exit:
         sys.exit(0)
 
 

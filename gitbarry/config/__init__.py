@@ -11,7 +11,6 @@ config = configparser.ConfigParser()
 try:
     if os.path.isfile(config_name):
         config.read(config_name)
-        print("Using %s" % os.path.abspath(config_name))
 except IOError:
     print("%s does not exists. Using default." % config_name)
     config['task-feature'] = {
