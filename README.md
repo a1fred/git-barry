@@ -36,7 +36,7 @@ $ git barry finish
 ```
 
 # Configuration
-Store your configuration in *gitbarry.ini*.
+Store your configuration in *{PROJECT_ROOT}/gitbarry.ini*.
 
 ## Syntax
 Example
