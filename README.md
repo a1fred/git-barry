@@ -10,7 +10,7 @@ $ python3 setup.py install
 ```
 ## From pypi
 ```shell
-$ python install gitbarry
+$ pip install gitbarry
 ```
 
 # Usage
