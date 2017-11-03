@@ -4,6 +4,14 @@
 
 Gitflow-inspired, but flexible and customizable project management tool.
 
+Quick demo:
+```shell
+$ git barry start feature awesome  # Create and switch to feature branch
+$ git barry finish  # Merge with master then delete branch, switch to master
+$ git barry start release v0.9.8  # Create and switch to release branch
+$ git barry finish  # Tag branch, merge with master
+```
+
 # Installation
 ## From source
 ```shell
@@ -25,14 +33,20 @@ git barry <reason> <type> [name]
 * name - name of task when start
 
 
-## Start new feature
+#### Start new feature
 ```shell
 $ git barry start feature <name>
 ```
 
-## Finish feature
+#### Finish feature
 ```shell
 $ git barry finish
+```
+
+#### Switch between tasks
+```shell
+$ git barry switch feature 22
+$ git barry switch release v2.1
 ```
 
 # Configuration
@@ -49,7 +63,6 @@ finish-branch-to=master
 
 We create task named *feature*
  - *branch-from* - branch from who we checking out when start feature
- - *finish-action* - action, called when finish
  - *finish-branch-to* - merge action-parameter. Target-branch for merge.
 
 ### Finish actions
@@ -67,6 +80,15 @@ Send http-request, that created pull-request to *finish-branch-to*
 Request-parameters:
 * *finish-pull-request-url* - url template. http://gitlab.com/example/tree/{branch} for example
 * *finish-pull-request-method* - request method. Default is GET
+
+#### Tag
+name in configfile: *tag*
+
+Tag branch
+
+Request-parameters:
+- *branch-from* - branch from who we checking out when start feature
+- *finish-branch-to* - merge action-parameter. Target-branch for merge.
 
 #### Open-browser
 name in configfile: *open-browser*
