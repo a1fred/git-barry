@@ -46,4 +46,8 @@ class UtilsGitTests(TestCase):
         self.assertNotIn(new_branch_name, git.get_local_branches())
 
     def tearDown(self):
-        git.swith_to_branch(self.current_branch)
+        try:
+            git.swith_to_branch(self.current_branch)
+            git.delete_branch('ci-branch')
+        except:
+            pass
