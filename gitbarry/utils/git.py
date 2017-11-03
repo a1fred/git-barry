@@ -68,3 +68,8 @@ def delete_branch(branch_name):
     ensure_branch_exists(branch_name)
     output = sh.git("branch", '-D', branch_name)
     print(output)
+
+
+def tag(tagname):
+    output = sh.git("tag", tagname)
+    print(output)
