@@ -48,6 +48,5 @@ class UtilsGitTests(TestCase):
     def tearDown(self):
         try:
             git.swith_to_branch(self.current_branch)
-            git.delete_branch('ci-branch')
         except:
             pass
