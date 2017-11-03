@@ -16,7 +16,6 @@ class Reason(AbstractReason):
     def run(self):
         shortcuts.ensure_current_branch_is_taskbranch()
         task_type = shortcuts.get_current_task_type()
-        print("Current branch is %s" % task_type)
         task_params = settings["TASKS"][task_type]
         finish_action = task_params['finish-action']
         action_module = settings['FINISH_ACTIONS'][finish_action]
