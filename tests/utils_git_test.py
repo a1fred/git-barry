@@ -5,6 +5,10 @@ from gitbarry.utils import git
 
 
 class UtilsGitTests(TestCase):
+    def setUp(self):
+        self.current_branch = git.get_current_branch()
+        assert self.current_branch
+
     def test_assert_is_git_repo(self):
         git.assert_is_git_repo()
 
@@ -40,3 +44,6 @@ class UtilsGitTests(TestCase):
 
         git.delete_branch(new_branch_name)
         self.assertNotIn(new_branch_name, git.get_local_branches())
+
+    def tearDown(self):
+        git.swith_to_branch(self.current_branch)

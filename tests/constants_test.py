@@ -13,3 +13,4 @@ class ConstantsTests(TestCase):
         for action_name, module_path in constants.FINISH_ACTIONS.items():
             self.assertIsNotNone(action_name)
             self.assertIsNotNone(shortcuts.import_from_str(module_path))
+
