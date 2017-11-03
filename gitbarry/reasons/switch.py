@@ -23,4 +23,5 @@ class Reason(AbstractReason):
     def run(self):
         branch = self.args[0]
         git.swith_to_branch(branch)
+        git.merge(branch)
         print("Done")
