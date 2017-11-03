@@ -7,12 +7,13 @@ tasks = settings['TASKS'].keys()
 class Reason(AbstractReason):
     def usage(self):
         print("git barry switch options:")
-        print("  git barry switch <task>/<feature_name>")
+        print("  git barry switch <task> <feature_name>")
 
     def validate(self):
-        if len(self.args) != 1:
+        if len(self.args) != 2:
             return ['use "git barry switch help" to see options.']
-        branch = self.args[0]
+        task, tagname = self.args
+        branch = "%s/%s" % (task, tagname)
         if git.get_current_branch() == branch:
             return [
                 'Already at %s' % branch
@@ -21,7 +22,8 @@ class Reason(AbstractReason):
         return errors
 
     def run(self):
-        branch = self.args[0]
+        task, tagname = self.args
+        branch = "%s/%s" % (task, tagname)
+
         git.swith_to_branch(branch)
-        git.merge(branch)
         print("Done")

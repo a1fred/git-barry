@@ -48,7 +48,6 @@ def create_new_branch(branch_name: str, push_to_origin=True):
 
 
 def swith_to_branch(branch_name: str):
-    print("Switching to %s" % branch_name)
     ensure_branch_exists(branch_name)
     sh.git('checkout', branch_name)
     try:
@@ -58,7 +57,6 @@ def swith_to_branch(branch_name: str):
 
 
 def merge(from_branch):
-    print("Fetching changes from %s" % from_branch)
     ensure_branch_exists(from_branch)
     output = sh.git("merge", from_branch)
     print(output)

@@ -10,3 +10,5 @@ class Action(AbstractAction):
         current_branch = git.get_current_branch()
         _, ver = current_branch.split("/")
         git.tag(ver)
+        git.swith_to_branch(self.params['finish-branch'])
+        git.merge(current_branch)
