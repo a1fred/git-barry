@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 requires = [
     'sh==1.11',
-    'requests==2.11.0',
+    'requests==2.20.0',
 ]
 
 test_requires = requires
